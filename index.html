@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura de Computadoras</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c4dafa;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #005187;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 80px;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        header h2 {
+            font-size: 18px;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #4d82bc;
+            color: white;
+        }
+
+        table th, table td {
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        table a {
+            color: white;
+            text-decoration: none;
+        }
+
+        table a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #802434;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Imágenes */
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Contenedor del menú */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Botón del menú */
+        .dropbtn {
+            background-color: #c4dafa;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Contenido del menú desplegable */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #005187;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Estilos de los enlaces dentro del menú */
+        .dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Efecto hover sobre los enlaces */
+        .dropdown-content a:hover {
+            background-color: #c4dafa;
+        }
+
+        /* Mostrar el menú al pasar el mouse */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Cambiar color del botón al pasar el mouse */
+        .dropdown:hover .dropbtn {
+            background-color: #005187;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="tecnmlogo-png.png" alt="TECNM logo">
+        <div>
+            <h1>Tecnológico Nacional de México</h1>
+            <h2>Instituto Tecnológico de Saltillo</h2>
+        </div>
+        <img src="tecsaltillo-png.jpeg" alt="TEC SALTILLO logo">
+    </header>
+    <main>
+        <p><b>Arquitectura de Computadoras</b></p>
+        <div class="dropdown">
+        <button class="dropbtn">Menú<br><img src="descarga.jfif" height="300" width="400"></button>
+        <div class="dropdown-content">
+            <a href="Unidad1.html" target="_self">Unidad 1</a>
+            <a href="Unidad2.html" target="_self">Unidad 2</a>
+            <a href="Unidad3.html" target="_self">Unidad 3</a>
+            <a href="Unidad4.html" target="_self">Unidad 4</a>
+            <a href="Practicas.html" target="_self">Practicas</a>
+            <a href="Informacion.html" target="_self">Informacion</a>
+        </div>
+        </div>
+        <p><b><i>TEMARIO</i></b></p>
+        <p>
+            <b>Unidad 1 Arquitectura de computo</b>
+            <br><b>1.1</b> Modulos de Arquitectura
+            <br><b>1.1.1</b> Clasicas
+            <br><b>1.1.2</b> Segmentadas
+            <br><b>1.1.3</b> Multiprocesamiento
+            <br><b>1.2</b> Análisis de componentes
+            <br><b>1.2.1</b> Arquitecturas
+            <br><b>1.2.1.1</b> Unidad Central de Procesamiento
+            <br><b>1.2.1.2</b> Unidad Aritmética Lógica
+            <br><b>1.2.1.3</b> Registros
+            <br><b>1.2.1.4</b> Buses
+            <br><b>1.2.2</b> Memoria
+            <br><b>1.2.2.1</b> Conceptos básicos del manejo de la memoria
+            <br><b>1.2.2.2</b> Memoria principal
+            <br><b>1.2.2.3</b> Memoria cache
+            <br><b>1.2.3</b> Manejo de entrada/salida
+            <br><b>1.2.3.1</b> Módulos de entrada/salida
+            <br><b>1.2.3.2</b> Entrada/salida programada
+            <br><b>1.2.3.3</b> Entrada/salida mediante interrupciones
+            <br><b>1.2.3.4</b> Acceso directo a memoria
+            <br><b>1.2.3.5</b> Canales y procesadores de entrada/salida
+            <br><b>1.2.4</b> Buses
+            <br><b>1.2.4.1</b> Tipos de buses
+            <br><b>1.2.4.2</b> Estructura de buses
+            <br><b>1.2.4.3</b> Jerarquía de buses
+            <br><b>1.2.5</b> Interrupciones
+        </p>
+        <p>
+            <b>Unidad 2 Estructura y funcionamiento de la unidad central de procesamiento</b> 
+            <br><b>2.1</b> Organización del procesador
+            <br><b>2.2</b> Estructura de registros
+            <br><b>2.2.1</b> Registros visibles para el usuario
+            <br><b>2.2.2</b> Registros de control y estados
+            <br><b>2.2.3</b> Ejemplos CPU
+            <br><b>2.3</b> El ciclo de la instrucción
+            <br><b>2.3.1</b> Ciclo Fetch-Decode-Execute(FDE)
+            <br><b>2.3.2</b> Segmentación de instrucciones
+            <br><b>2.3.3</b> Conjunto de instrucciones
+            <br><b>2.3.4</b> Métodos de direccionamiento
+        </p>
+        <p>
+            <b>Unidad 3 Selección de componentes para ensamble de equipo de computo</b>
+            <br><b>3.1</b> Chipset
+            <br><b>3.1.1</b> Unidad central de procesamiento
+            <br><b>3.1.2</b> Controlador del bus
+            <br><b>3.1.3</b> Punteros de entrada E/S
+            <br><b>3.1.4</b> Controlador de interrupciones
+            <br><b>3.1.5</b> Controlador de acceso directo a memoria (DMA)
+            <br><b>3.1.6</b> Circuitos de temporización
+            <br><b>3.1.7</b> Circuitos de control
+            <br><b>3.1.8</b> Controlador de video
+            <br><b>3.2</b> Aplicaciones
+            <br><b>3.2.1</b> Entrada salida
+            <br><b>3.2.2</b> Almacenamiento
+            <br><b>3.2.3</b> Fuentes de alimentación
+            <br><b>3.3</b> Ambientes de servicio
+            <br><b>3.3.1</b> Negocios
+            <br><b>3.3.2</b> Industria
+            <br><b>3.3.3</b> Comercio electrónico
+        </p>
+        <p>
+            <b>Unidad 4 Procesamiento paralelo</b>
+            <br><b>4.1</b> Aspectos básicos de la computación paralela
+            <br><b>4.2</b> Tipos de computación paralela
+            <br><b>4.2.1</b> Clasificación
+            <br><b>4.2.2</b> Arquitectura de computadoras secuenciales
+            <br><b>4.2.3</b> Organización de direcciones de memoria
+            <br><b>4.3</b> Sistemas de memoria (compartida). Multiprocesadores
+            <br><b>4.3.1</b> Redes de interconexión dinámicas o indirectas
+            <br><b>4.3.2</b> Redes conmutadas
+            <br><b>4.4</b> Sistemas de memoria construida. Multicomputadores
+            <br><b>4.4.1</b> Redes de interconexión estáticas
+            <br><b>4.5</b> Casos de estudio
+        </p>
+    </main>
+</body>
+</html>
